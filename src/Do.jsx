@@ -11,7 +11,7 @@ const Do = (props) => {
  }
   return (
     <div className='do'>
-        { props.item.status?<img className="img3" onClick={changeStatus} src="src\assets\tick.jpg"/> : <img className="img1" onClick={changeStatus}src="src\assets\circular.webp"/> }
+        { props.item.status?<img className="img3" onClick={changeStatus} src="src\assets\tick.jpg" alter="ok"/> : <img className="img1" onClick={changeStatus}src="src\assets\circular.webp" alter="Close"/> }
         <h2>{props.item.value}</h2>
         <img className="img2" onClick={(close)=>{
            const data= props.data.filter((obj)=>{
